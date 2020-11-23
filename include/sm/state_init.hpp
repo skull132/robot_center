@@ -10,18 +10,14 @@ struct EvToInit {};
 
 
 // Guards
-struct guardEntryInit;//guardEntryInit;
-/*
+struct guardEntryInit//guardEntryInit;
 {
   bool operator()() const { LOG(INFO) << "guard exit init"; return true; }
 } guardEntryInit;
-*/
-struct guardToInit;// guardToInit;
-/*
+struct guardToInit// guardToInit;
 {
   bool operator()() const { LOG(INFO) << "guard exit init"; return true; }
 } guardToInit;
-*/
 struct GuardExitInit
 {
   bool operator()() const { LOG(INFO) << "guard exit init"; return true; }
@@ -37,18 +33,14 @@ struct GuardExceptionInit
 
 
 // Actions
-struct ActEntryInit;// {} actEntryInit;
-/*
+struct ActEntryInit// {} actEntryInit;
 {
   void operator()() { LOG(INFO) << "action exit init"; }
 } actEntryInit;
-*/
-struct ActToInit; // {} actToInit;
-/*
+struct ActToInit // {} actToInit;
 {
   void operator()() { LOG(INFO) << "action exit init"; }
 } actToInit;
-*/
 struct ActExitInit
 {
   void operator()() { LOG(INFO) << "action exit init"; }

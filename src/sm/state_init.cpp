@@ -1,5 +1,6 @@
 #include <sm/state_init.hpp>
 
+/*
 
 struct guardEntryInit
 {
@@ -56,3 +57,4 @@ struct ActToInit
 {
   void operator()() { LOG(INFO) << "action to init"; }
 } actToInit;
+*/
